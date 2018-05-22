@@ -3,9 +3,14 @@ package org.bootcamp.academiadecodigo;
 public class Bank {
 
     Person id;
-    int pin;
     double balance;
-    int accNumb;
+
+    public Bank(int balance, Person id){
+
+        this.balance = balance;
+        this.id = id;
+
+    }
 
 
 }
