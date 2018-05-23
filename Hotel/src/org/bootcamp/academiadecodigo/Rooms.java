@@ -9,10 +9,10 @@ public class Rooms {
     boolean occupied;
 
     public Rooms(){
-
         occupied = false;
-
     }
+
+    //SETTERS AND GETTERS
 
     public void setOccupied(boolean occupied) {
         this.occupied = occupied;
