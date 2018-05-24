@@ -14,19 +14,19 @@ public class Lamp {
 
         this.genies = genies;
         totalGenies = genies;
-
     }
 
-    //GETTER SETTER
     //RECYCLE LAMP
     public void recycle(Demigod demon) {
         if(demon.getType() ==GenieTypes.Demon){
             Demon demon1 = (Demon) demon;
-            demon1.setWasRecycled(true);
-            genies = totalGenies;
-            recycled++;
-        }
+            if(demon1.isWasRecycled() == false){
+                demon1.setWasRecycled(true);
+                genies = totalGenies;
+                recycled++;
+            }
 
+        }
     }
 
     //RUBBING A LAMP
@@ -47,7 +47,6 @@ public class Lamp {
                 return currentGenie;
             }
         }
-
     }
 
     //COMPARING LAMPS

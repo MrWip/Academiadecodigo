@@ -14,8 +14,13 @@ public class Demon extends Demigod {
     }
 
 
+    //SETTERS AND GETTERS
     public void setWasRecycled(boolean wasRecycled) {
         this.wasRecycled = wasRecycled;
+    }
+
+    public boolean isWasRecycled() {
+        return wasRecycled;
     }
 
     //CONCEDE WISHES
