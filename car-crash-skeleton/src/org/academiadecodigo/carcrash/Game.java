@@ -60,7 +60,20 @@ public class Game {
     private void moveAllCars() {
 
         for (int i = 0; i < cars.length; i++) {
-            cars[i].move();
+            for(int k = 0 ; k<cars[i].getSpeed(); k++){
+                if(cars[i].isCrashed()){
+                    continue;
+                }
+                cars[i].move();
+                for(int c = -1; c < cars.length-1; c++){
+                    if (cars[i].getPos().getCol() == cars[c].getPos().getCol()
+                            && cars[i].getPos().getRow() == cars[c].getPos().getRow()
+                            && i != c){
+                        cars[i].setCrashed(true);
+                        cars[c].setCrashed(true);
+                    }
+                 }
+            }
         }
 
     }

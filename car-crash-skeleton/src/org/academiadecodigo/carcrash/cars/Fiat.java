@@ -7,12 +7,12 @@ import org.academiadecodigo.carcrash.field.Position;
  */
 public class Fiat extends Car{
 
-    int color;
 
     public Fiat(Position pos){
         super(pos);
-        color = 2;
+        setSpeed(2);
     }
+
 
     @Override
     public String toString() {

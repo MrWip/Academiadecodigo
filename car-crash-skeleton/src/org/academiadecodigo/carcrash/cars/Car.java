@@ -9,13 +9,23 @@ abstract  public class Car {
     private Position pos;
     private boolean crashed;
     private int momentum;
+    private int speed;
 
 
     public Car(Position pos){
         crashed = false;
         this.pos = pos;
         momentum = (int) ( Math.random() * 4 + 1);
+        speed = 1;
 
+    }
+
+    public int getSpeed(){
+        return speed;
+    }
+
+    public int setSpeed(int number){
+        speed = number;
     }
 
     public Position getPos() {
