@@ -5,13 +5,13 @@ package org.academiadecodigo.bootcamp;
  */
 public class Demigod {
 
-    private boolean recycled;
    private int numberOfWishes;
+   private GenieTypes type;
 
 
-    public Demigod(){
+    public Demigod(GenieTypes type){
         numberOfWishes = 5;
-        recycled = true;
+        this.type = type;
     }
 
     public void concedeWish(){
@@ -23,20 +23,9 @@ public class Demigod {
         return numberOfWishes;
     }
 
-    public boolean isRecycled() {
-        return recycled;
-    }
 
-    public void setRecycled(boolean recycled) {
-        this.recycled = recycled;
-    }
-
-    //RECYCLE
-    public void recycle(Lamp lamp){
-        if(recycled = false){
-            lamp.setGenies();
-            recycled = true;
-        }
+    public GenieTypes getType() {
+        return type;
     }
 
     @Override

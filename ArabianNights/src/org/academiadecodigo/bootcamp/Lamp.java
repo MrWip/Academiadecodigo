@@ -8,7 +8,6 @@ public class Lamp {
     int genies;
     int totalGenies;
     int recycled;
-    Demigod currentGenie;
 
     //CONSTRUCTOR
     public Lamp(int genies){
@@ -20,18 +19,20 @@ public class Lamp {
 
     //GETTER SETTER
     //RECYCLE LAMP
-    public void setGenies() {
+    public void recycle(Demigod demon) {
+        if(demon.getType() ==GenieTypes.Demon){
+            Demon demon1 = (Demon) demon;
+            demon1.setWasRecycled(true);
+            genies = totalGenies;
+            recycled++;
+        }
 
-        genies = totalGenies;
-        recycled++;
     }
 
     //RUBBING A LAMP
     public Demigod rub(){
+        Demigod currentGenie;
         if(genies <= 0){
-            if(genies < 0 ){
-                return currentGenie;
-            }
             currentGenie = new Demon();
             return currentGenie;
         }
@@ -67,7 +68,6 @@ public class Lamp {
                 "genies=" + genies +
                 ", totalGenies=" + totalGenies +
                 ", recycled=" + recycled +
-                ", currentGenie=" + currentGenie +
                 '}';
     }
 }

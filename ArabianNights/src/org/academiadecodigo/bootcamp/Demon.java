@@ -6,29 +6,30 @@ package org.academiadecodigo.bootcamp;
 public class Demon extends Demigod {
 
 
+    private boolean wasRecycled;
+
     public Demon(){
-
-        setRecycled(false);
-
+        super(GenieTypes.Demon);
+        wasRecycled = false;
     }
 
 
+    public void setWasRecycled(boolean wasRecycled) {
+        this.wasRecycled = wasRecycled;
+    }
 
     //CONCEDE WISHES
     @Override
     public void concedeWish(){
-        if(isRecycled() == false){
+        if(wasRecycled == false){
             super.concedeWish();
         }
-
     }
-
-
 
     @Override
     public String toString() {
         return "Demon{" +
-                "recycled=" + isRecycled() +
+                "wasRecycled=" + wasRecycled +
                 '}';
     }
 }

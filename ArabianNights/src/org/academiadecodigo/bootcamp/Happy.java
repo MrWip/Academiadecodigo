@@ -5,8 +5,9 @@ package org.academiadecodigo.bootcamp;
  */
 public class Happy extends Demigod {
 
+
     public Happy(){
-        super();
+        super(GenieTypes.happyG);
     }
 
 

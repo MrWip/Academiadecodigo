@@ -8,7 +8,7 @@ public class Grumpy extends Demigod {
     private int concededWishes;
 
     public Grumpy(){
-        super();
+        super(GenieTypes.grumpyG);
         concededWishes = 1;
 
     }
