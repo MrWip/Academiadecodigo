@@ -35,19 +35,19 @@ public class Position {
     }
 
     //CHECK LIMITS
-    public boolean limit(int direction){
+    public boolean limit(Direction direction){
 
         switch(direction){
-            case 1:
+            case UP:
                if(row == 0){ return true;}
                return false;
-            case 2:
+            case DOWN:
                 if(row == Field.height-1){return true;}
                     return false;
-            case 3:
+            case RIGHT:
                 if(col == Field.width-1){return true;}
                     return false;
-            case 4:
+            case LEFT:
                 if(col == 0){return true;}
                     return false;
         }

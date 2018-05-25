@@ -6,7 +6,7 @@ import org.academiadecodigo.carcrash.field.Field;
 
 public class Game {
 
-    public static final int MANUFACTURED_CARS = 20;
+    public static final int MANUFACTURED_CARS = 2;
 
     /** Container of Cars */
     private Car[] cars;
@@ -59,20 +59,17 @@ public class Game {
 
     private void moveAllCars() {
 
-        for (int i = 0; i < cars.length; i++) {
-            for(int k = 0 ; k<cars[i].getSpeed(); k++){
-                if(cars[i].isCrashed()){
-                    continue;
-                }
+        for(int i = 0; i < cars.length; i++){
+            for(int speed = 1; speed <= cars[i].getSpeed();speed++){
                 cars[i].move();
-                for(int c = -1; c < cars.length-1; c++){
-                    if (cars[i].getPos().getCol() == cars[c].getPos().getCol()
-                            && cars[i].getPos().getRow() == cars[c].getPos().getRow()
-                            && i != c){
+                for(int c = 0; c <= cars.length-1; c++){
+                    if(cars[i].getPos().getRow() == cars[c].getPos().getRow()
+                            && cars[i].getPos().getCol() == cars[c].getPos().getCol()
+                            && cars[i] !=  cars[c]){
                         cars[i].setCrashed(true);
                         cars[c].setCrashed(true);
                     }
-                 }
+                }
             }
         }
 

@@ -1,6 +1,6 @@
 package org.academiadecodigo.carcrash.cars;
-
-import org.academiadecodigo.carcrash.field.Field;
+import org.academiadecodigo.carcrash.Randomizer;
+import org.academiadecodigo.carcrash.field.Direction;
 import org.academiadecodigo.carcrash.field.Position;
 
 abstract  public class Car {
@@ -8,14 +8,16 @@ abstract  public class Car {
     /** The position of the car on the grid */
     private Position pos;
     private boolean crashed;
-    private int momentum;
+    private Direction direction;
     private int speed;
+    private int random;
 
 
     public Car(Position pos){
         crashed = false;
         this.pos = pos;
-        momentum = (int) ( Math.random() * 4 + 1);
+        direction = Randomizer.randomDirection(Direction.NEW);
+        random =  (int) ( Math.random() * 10 + 1);
         speed = 1;
 
     }
@@ -24,7 +26,7 @@ abstract  public class Car {
         return speed;
     }
 
-    public int setSpeed(int number){
+    public void setSpeed(int number){
         speed = number;
     }
 
@@ -41,27 +43,56 @@ abstract  public class Car {
     }
 
     public void move(){
-        int oldMomentum = momentum;
-        while(pos.limit(momentum)){
-            System.out.println("que merda e esta");
-           while(momentum == oldMomentum){
-               System.out.println("wTF");
-               momentum = (int) ( Math.random() * 4 + 1);
-           }
+
+        if(crashed == true){
+            return;
         }
-        switch(momentum){
-            case 1:
-                pos.moveUp();
-                break;
-            case 2:
-                pos.moveDown();
-                break;
-            case 3:
-                pos.moveRight();
-                break;
-            case 4:
-                pos.moveLeft();
-                break;
+        if(random == 0){
+            if(direction == Direction.UP || direction == Direction.DOWN){
+                while(direction == Direction.UP || direction == Direction.DOWN){
+                    direction = Randomizer.randomDirection(direction);
+                }
+            }else if(direction == Direction.LEFT || direction == Direction.RIGHT){
+                while(direction == Direction.LEFT || direction == Direction.RIGHT){
+                    direction = Randomizer.randomDirection(direction);
+                }
+            }
+            random = (int) ( Math.random() * 10 + 1);
+        }
+        random--;
+        switch(direction){
+            case UP:
+                if(pos.limit(Direction.UP) == false){
+                    pos.moveUp();
+                    break;
+                }else{
+                    direction = Randomizer.randomDirection(direction);
+                    break;
+                }
+            case DOWN:
+                if(pos.limit(Direction.DOWN) == false){
+                    pos.moveDown();
+                    break;
+                }else{
+                    direction = Randomizer.randomDirection(direction);
+                    break;
+                }
+            case RIGHT:
+                if(pos.limit(Direction.RIGHT) == false){
+                    pos.moveRight();
+                    break;
+                }else{
+                    direction = Randomizer.randomDirection(direction);
+                    break;
+                }
+            case LEFT:
+                if(pos.limit(Direction.LEFT) == false){
+                    pos.moveLeft();
+                    break;
+                }else{
+                    direction = Randomizer.randomDirection(direction);
+                    break;
+                }
         }
     }
 }
