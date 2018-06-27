@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <link rel='stylesheet' href='./css/bootstrap.min.css' />
+
+    <!--the stylesheet for this webpage-->
+    <link rel="stylesheet" type="text/css" href="../includes/index.css" media="screen" />
+    <!-- navbar stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../includes/navbar.css" media="screen" />
+
+    <!-- some javascript for buttons -->
+    <script>
+      function button_destiny(destination){
+        window.open(destination);
+      }
+    </script>    
+  </head>    
+	<body>
+
+    <!--the navbar inserted-->   
+<nav class="navbar navbar-default" id="headcss">
+  <div class="container-fluid" >
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" id="toggle_btn">
+        <span class="sr-only" id="smallbar">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <a class="navbar-brand" target='_top' href="index.html"><img src='./img/navbarico.jpg' class="img-responsive.visible-md, hidden-xs" id="border2"></a>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <span class="sr-only">(current)</span>
+        <li><a target='_top' href="guides.html" id="navlinks_about" >Guides</a></li>
+        <li><a target='_top' href="gameplay.html"id="navlinks_about">Gamplay</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" id="navlinks_about">More<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" >
+            <li><a target='_top' href="guides.html">Guides</a></li>
+            <li><a target='_top' href="gameplay.html">Gameplay</a></li>
+            <li><a target='_blank' href="https://www.youtube.com/channel/UC2Gi560ixKwDmpfZphhl9sg" id="more_text">Youtube Channel</a></li>
+            <li class="divider"></li>
+            <li><a target='_top' href="about.html">About</a></li>
+            <li class="divider"></li>
+            <li><a target='_top' href="policy.html">Privacy Policy</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input class="form-control" placeholder="Search for videos" type="text">
+        </div>
+        <button type="submit" class="btn btn-default" id="search_btn">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a target='_top' href="about.html" id="navlinks_about" style="color:black;">About</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id='navwrapper'></div>
+
+<!--    /////////////////////                Webpage begins              ////////////////////////           -->
+<div class='row'>
+  <div class='col-xs-8 col-md-10'>
+    <!-- nested table1 begins -->
+    <!-- main banner row, nested table 1 row1 -->
+  	<div class='row'>
+      <div class='col-sm-1'>
+      </div> 
+	   		<div class='col-xs-12 col-sm-11'>	
+					<img src='./img/title.jpg' class="img-responsive" id='border1'>
+        </div>
+		</div>
+    <!-- Main text row, nestedtable1 row2 -->
+		<div class='row'>
+      <div class='col-sm-1'>
+      </div>
+			<div class="col-xs-12 col-sm-11">
+        <h1 align="center">Welcome</h1>
+        <p><h4>Hello there, the website is up and running!</h4>
+        <p><h5>Here you will find all the videos plus some detailed descriptions and guides that may come in handy.
+        <p>I will be constantly updating the website and also adding some scripts but for now i can only run client-side code as the website isnt hosted on a proper server. That said, the goal is to make enough money from the ads so i can afford a server in order to improve the website, with better code and more content.
+        <p>So enjoy, check out the contents, turn-off that adblocker, and if you would like to give a bit,</h5><h4>donations of any size are always welcome!</h4> 
+        <p><h5>Thanks for reading.</h5><br><br>_<br><br>
+			</div>
+		</div>
+    <!-- newest update text + video + whatever -->
+    <div class='row'>
+      <div class='col-sm-1'>
+      </div>
+      <div class='col-xs-12 col-sm-11'>
+        <h2>New update:</h2>
+        <h5><p align='left'>The website is slowly comming together, there are now 3 gameplay videos available on the gameplay section and hopefully this week i will find some time to finish up the guide section with a couple of intresting free to play game guides and the start of my FM 2015 season. Stay tuned</h5>
+          <br><br>
+        <p align='center'><h8>Visit the gameplay section for videos and full descriptions or go directly to my youtube channel.</h8>
+        <div align='center'>
+          <h1><button type="btn" class="btn btn-default" id="b1" onclick="destiny='https://www.youtube.com/channel/UC2Gi560ixKwDmpfZphhl9sg';button_destiny(destiny);"></button>
+          | <button type="btn" class="btn btn-default" id="b2" onclick="destiny='gameplay.html';button_destiny(destiny);"><p id='p1' align='center'>Gameplay<p id='p1' align='center'>Section</button></h1>
+        </div>
+        <div align='left'>
+          <br><img src='./img/line.jpg' class="img-responsive"><br>
+        </div>
+      </div>
+    </div>      
+    <!--video of the week + description text, nestedtable1 row3-->
+    <div class='row'>
+      <div class='col-sm-1'>
+      </div>
+      <div class='col-xs-12 col-sm-8'>
+        <h4>Video of the week:</h4>
+        <div class="myIframe">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/6wlvYh0h63k" frameborder="1" allowfullscreen></iframe>
+        </div>
+        <h4>Rainbow Six Siege</h4><p><h5>Release date: already released.
+        <p><br>Amazing game, won IGN best of E3 prize back in 2015 and soon i expect to be uploading my own gameplay from it, stay tuned!
+      </div>
+      <div class='col-sm-3'>
+        <div class='hidden-phone' align='left'>publicity</div>
+        <div class='hidden-phone' align='left'>
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- wipuvideos_smallrectangle -->
+          <ins class="adsbygoogle"
+            style="display:inline-block;width:180px;height:150px"
+            data-ad-client="ca-pub-1547406716171055"
+            data-ad-slot="5420986426"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+      </div>
+    </div> 
+    <!-- the 2 stripes and google ad banner, nestedtable1 row4-->
+    <div class='row'>
+      <div class='col-sm-1'>
+      </div>
+      <div class='col-xs-12 col-sm-11'>
+        <div align='left'>
+          <img src='./img/line.jpg' class="img-responsive"><br> 
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- wipuvideos_bottom -->
+          <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-1547406716171055"
+            data-ad-slot="9168358427"
+            data-ad-format="auto"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+          <br><img src='./img/line.jpg' class="img-responsive">
+        </div>  
+      </div> 
+    </div>
+    <!--menu for nojavascript, nestedtable1 row5--> 
+    <div class=row>
+      <div class='col-sm-1'>
+      </div>
+      <div class='col-xs-10 col-sm-9'>
+        MENU<br>
+        <a target='_top' href="index.html/">|Home|</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a target='_top' href="guides.html/">|Guides|</a>&nbsp;&nbsp;&nbsp;&nbsp;   
+        <a target='_top' href="gameplay.html/">|Gameplay|</a>&nbsp;&nbsp;&nbsp;   
+        <a target='_blank' href="https://www.youtube.com/channel/UC2Gi560ixKwDmpfZphhl9sg">|YoutubeChannel|</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a target='_top' href="about.html/">|About|</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a target='_top' href="policy.html/">|PrivacyPolicy|</a>&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+      <div class='col-xs-2' align='left'>
+        <br><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="L9HHWCWRMUNSS">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>        
+      </div>
+    </div>  
+  </div>
+  <!--nested table ends -->
+  <div class='col-xs-4 col-sm-3 col-md-2' align='center'>
+    <div class='paypal'>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="8AKNUPE9LZWRL">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="Submit"alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+    </div>    
+      publicity
+      <div align='center'>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- wipuvideos_skyscraper -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:120px;height:600px"
+             data-ad-client="ca-pub-1547406716171055"
+             data-ad-slot="4223454826"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+    </div>
+</div>  
+  <script src='./js/jquery-2.2.0.min.js'></script>
+  <script src='./js/bootstrap.min.js'></script>
+</body>
+</html>

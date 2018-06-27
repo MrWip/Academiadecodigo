@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>About</title>
+		<link rel='stylesheet' href='./css/bootstrap.min.css' />
+    <!--About costum stylesheet-->
+    <link rel='stylesheet' href='../includes/about.css'>
+    <!-- navbar stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../includes/navbar.css" media="screen" />
+	</head>
+	<body>
+		<!--the navbar inserted-->   
+<nav class="navbar navbar-default" id="headcss">
+  <div class="container-fluid" >
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" id="toggle_btn">
+        <span class="sr-only" id="smallbar">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <a class="navbar-brand" target='_top' href="index.html"><img src='./img/navbarico.jpg' class="img-responsive.visible-md, hidden-xs" id="border2"></a>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <span class="sr-only">(current)</span>
+        <li><a target='_top' href="guides.html" id="navlinks_about" >Guides</a></li>
+        <li><a target='_top' href="gameplay.html"id="navlinks_about">Gamplay</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" id="navlinks_about">More<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" >
+            <li><a target='_top' href="guides.html">Guides</a></li>
+            <li><a target='_top' href="gameplay.html">Gameplay</a></li>
+            <li><a target='_blank' href="https://www.youtube.com/channel/UC2Gi560ixKwDmpfZphhl9sg" id="more_text">Youtube Channel</a></li>
+            <li class="divider"></li>
+            <li><a target='_top' href="about.html">About</a></li>
+            <li class="divider"></li>
+            <li><a target='_top' href="policy.html">Privacy Policy</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input class="form-control" placeholder="Search for videos" type="text">
+        </div>
+        <button type="submit" class="btn btn-default" id="search_btn">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a target='_top' href="about.html" id="navlinks_about" style="color:black;">About</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id='navwrapper'></div>
+
+<!--Page begining -->
+<!--insert wipuvideos banner in a row-->
+  <div class='row'>
+    <div class='col-sm-1'>
+    </div> 
+    <div class='col-xs-12 col-sm-10'>
+      <img src='./img/title.jpg' class="img-responsive" id='border1'>
+    </div>
+    <div class='col-sm-1'>
+    </div>
+  </div>
+<!--same thing for title-->  
+  <div class='row'>
+    <div class='col-sm-1'>
+    </div> 
+    <div class='col-xs-12 col-sm-10'>
+      <h1>About</h1>
+    </div>
+    <div class='col-sm-1'>
+    </div>
+  </div>
+<!-- rest of page in divs -->  
+    <div class='container'>
+      <h4 align='center'><p>Hello there, i hope u enjoyed my little website.</h4><br>
+      <h5><p>For me, the objective of this website was to consolidate some of my recently acquired skills in html, css and javascript. I expect i will keep updating the site with more content and better scripts but at the moment i am limited to client-side code as the site is hosted on dropbox.
+      <p>The goal now is to raise enough money from ads and donations so i can afford a proper server and make something better while learning new things in the process.<br>
+      <br>
+      <p>If you have anything to say just email me @ <a href='mailto:wipuvideos@gmail.com'><h2>wipuvideos@gmail</h2></a></h5><br>
+      <h4>Powered by:</h4>
+      <h5><p><a target='_top' href='http://sublimetext.com'>Sublime Text 2</a>, <a target='_top' href='http://stackoverflow.com'>stackoverflow</a> and <a target='_top' href='https://www.Dropbox.com'>Dropbox</a> :)</h5><br><br><br><br>
+      </div>
+      <div class='container'>
+        MENU
+      </div>
+      <div class='container'>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="L9HHWCWRMUNSS">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+      </div>
+      <div class='container'>  
+        <a target='_top' href="index.html/">|Home|</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a target='_top' href="guides.html/">|Guides|</a>&nbsp;&nbsp;&nbsp;&nbsp;   
+        <a target='_top' href="gameplay.html/">|Gameplay|</a>&nbsp;&nbsp;&nbsp;   
+        <a target='_blank' href="https://www.youtube.com/channel/UC2Gi560ixKwDmpfZphhl9sg">|YoutubeChannel|</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a target='_top' href="about.html/">|About|</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a target='_top' href="policy.html/">|PrivacyPolicy|</a>&nbsp;&nbsp;&nbsp;&nbsp;
+     </div>     
+    </div>    
+
+
+		<script src='./js/jquery-2.2.0.min.js'></script>
+		<script src='./js/bootstrap.min.js'></script>
+	</body>
+</html>

@@ -1,0 +1,96 @@
+
+body{
+    	background-image: url("../public/img/body1.jpg");
+    }
+
+#border1{
+        	
+        	border-width:5px;  
+        	border-style:double;
+    	}
+
+h1	{
+		font-size: 36px;
+		font-size: 3.6vw;
+		font-size: calc(100% + 3.2vw);
+		font-weight:bold;
+		color:white;
+	}
+h2{
+	color:red;
+}	
+
+h4	{
+		font-size:18px;
+		color:white;
+		font-style:italic;
+	}
+
+h5	{
+		font-size:16px;
+		color:white;
+	}
+h8{
+		font-size:18px;
+		color:white;
+		font-style:bold;
+}		
+
+.myIframe {
+position: relative;
+padding-bottom: 65.25%;
+padding-top: 30px;
+height: 0;
+overflow: auto;
+border: solid black 1px;
+} 
+.myIframe iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.paypal
+{
+	margin-top:75%;
+}
+
+@media screen and (max-width: 767px) {
+	.hidden-phone{display: none;}
+}
+
+#b1
+{
+	  background-image: url("../public/img/ybutton1.jpg");
+      width: 68px;
+      height:40px;
+      font-style: italic;
+      font-variant:small-caps;
+      font-size: 13px;
+      background-size:100% 100%;
+}
+
+#b2
+{
+	  background-image: url("../public/img/btnbody.jpg");
+      width: 68px;
+      height:40px;
+      font-style: italic;
+      font-weight:bold;
+      font-size: 12px;
+      border-style:groove;
+      border-width:4px;
+}
+
+
+#p1
+{
+	margin-top:-8px;
+	margin-left:-8px;
+	font-size: 10px;
+	color:black;
+	font-style: italic;
+    font-weight:bold;
+}

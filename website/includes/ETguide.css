@@ -1,0 +1,52 @@
+body{
+            background-image: url("../public/img/body1.jpg");
+          }
+
+#whitecontainer
+{
+	background-color: white;
+	border-style:outset;
+	border-width: 3px;
+	border-color:white;
+}
+h1{
+	color:white;
+}
+h7{
+	font-size:15px;
+    color:black;
+    font-weight:bold;
+}
+h6{
+	font-size:18px;
+	color:red;
+	font-weight:bold;
+	font-style: italic;
+}
+h8{
+	font-size: 22px;
+	color:black;
+	font-style: italic;
+}
+#etconcept{
+			margin-bottom: 10px;
+}
+#etlogo
+{
+	width:150px;
+}
+.inside{
+	position:absolute;
+}
+#step2{
+	visibility: hidden;
+}
+#step3{
+	visibility: hidden;
+}
+#step4{
+	visibility: hidden;
+}
+#step5{
+	visibility: hidden;
+}

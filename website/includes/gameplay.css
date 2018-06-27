@@ -1,0 +1,85 @@
+body{
+      background-image: url("../public/img/body1.jpg");
+    }
+
+ h1{
+    color:white;
+    }
+
+h4{
+    font-size:20px;
+    color:white;
+    font-style:italic;
+   }
+
+h5{
+    font-size:18px;
+    color:white;
+  }
+h6{
+    font-size:14px;
+    color:white;
+}
+h7{
+    font-size:12px;
+    color:black;
+    font-weight:bold;
+}  
+
+#c1{
+    width:75%;
+    float:left;
+    }
+
+#c2{
+    width:25%;
+    float:right;
+    }
+#c3{
+    float:right;
+}
+
+#paypal{
+        margin-left:0;
+        }
+#clipimg{
+    max-width:75%;
+    max-height:75%;
+    border:solid green 2px;
+}
+#clipimg2{
+    max-width:74%;
+    max-height:74%;
+    border:solid green 2px;
+}
+
+#videowrapper{
+    height:75%;
+    margin-top:0px;
+    margin-left:10px;
+    overflow:0;
+}
+
+#divi{
+position:absolute;
+width:35vh;
+height:auto;
+background-image:url("../public/img/body3.jpg");
+z-index:10;
+visibility: hidden;
+border-style:outset;
+}
+
+#videolist
+{
+    height:140px;
+    background-image:url("../public/img/btnbody.jpg");
+    border:inset;
+    border-color: red;
+}
+@media screen and (max-width: 767px) {
+    #videowrapper{  margin-left: 1px;
+        margin-right:1px;
+                    height: 100%;
+                  width:100%;  }
+}

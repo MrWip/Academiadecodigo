@@ -1,0 +1,44 @@
+body{
+      background-color:transparent;
+    }
+
+ h1{
+    color:white;
+    }
+h2{
+  color:white;
+}
+
+h4{
+    font-size:20px;
+    color:white;
+    font-style:italic;
+   }
+
+h5{
+    font-size:18px;
+    color:white;
+  }
+h6{
+    font-size:13px;
+    color:white;
+}
+h8{
+  font-size:18px;
+  color:red;
+  font-style:italic;
+}
+.myIframe {
+position: relative;
+padding-bottom: 65.25%;
+padding-top: 30px;
+height: 0;
+overflow: auto;
+} 
+.myIframe iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
